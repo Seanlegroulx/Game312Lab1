@@ -1,0 +1,422 @@
+fileFormatVersion: 2
+guid: 7f78b096b427d419f9918e4ae4fc4aec
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cylinder_002
+    100004: Cylinder_003
+    100006: Cylinder_004
+    100008: Cylinder_005
+    100010: Cylinder_006
+    100012: Cylinder_007
+    100014: Cylinder_008
+    100016: Cylinder_009
+    100018: Door
+    100020: Door_hinge
+    100022: Door_hinge_001
+    100024: Door_hinge_002
+    100026: Door_hinge_003
+    100028: Door_hinge_004
+    100030: Door_hinge_005
+    100032: Door_hinge_006
+    100034: Door_hinge_007
+    100036: Door_Opener
+    100038: Door_Ring
+    100040: Door_Ring_Bottom
+    100042: Elevator_main_post
+    100044: Elevator_Platform
+    100046: Floor
+    100048: Floor_Piece
+    100050: Floor_Piece_001
+    100052: Floor_Piece_002
+    100054: Floor_Piece_003
+    100056: Glass_Floor
+    100058: Inner_Octagon
+    100060: Outer_Octagon
+    100062: Outer_Wall_001
+    100064: Outer_Wall_002
+    100066: Outer_Wall_003
+    100068: Outer_Wall_004
+    100070: Outer_Wall_005
+    100072: Outer_Wall_006
+    100074: Outer_Wall_007
+    100076: Outer_Wall_008
+    100078: World_Centre
+    100080: Camera
+    100082: Cylinder.002
+    100084: Cylinder.003
+    100086: Cylinder.004
+    100088: Cylinder.005
+    100090: Cylinder.006
+    100092: Cylinder.007
+    100094: Cylinder.008
+    100096: Cylinder.009
+    100098: Door hinge
+    100100: Door hinge.001
+    100102: Door hinge.002
+    100104: Door hinge.003
+    100106: Door hinge.004
+    100108: Door hinge.005
+    100110: Door hinge.006
+    100112: Door hinge.007
+    100114: Door Opener
+    100116: Door Ring
+    100118: Door Ring Bottom
+    100120: Elevator main post
+    100122: Elevator Platform
+    100124: Floor Piece
+    100126: Floor Piece.001
+    100128: Floor Piece.002
+    100130: Floor Piece.003
+    100132: Glass Floor
+    100134: Inner Octagon
+    100136: Lamp
+    100138: Lamp.001
+    100140: Outer Octagon
+    100142: Outer Wall.001
+    100144: Outer Wall.002
+    100146: Outer Wall.003
+    100148: Outer Wall.004
+    100150: Outer Wall.005
+    100152: Outer Wall.006
+    100154: Outer Wall.007
+    100156: Outer Wall.008
+    100158: World Centre
+    400000: //RootNode
+    400002: Cylinder_002
+    400004: Cylinder_003
+    400006: Cylinder_004
+    400008: Cylinder_005
+    400010: Cylinder_006
+    400012: Cylinder_007
+    400014: Cylinder_008
+    400016: Cylinder_009
+    400018: Door
+    400020: Door_hinge
+    400022: Door_hinge_001
+    400024: Door_hinge_002
+    400026: Door_hinge_003
+    400028: Door_hinge_004
+    400030: Door_hinge_005
+    400032: Door_hinge_006
+    400034: Door_hinge_007
+    400036: Door_Opener
+    400038: Door_Ring
+    400040: Door_Ring_Bottom
+    400042: Elevator_main_post
+    400044: Elevator_Platform
+    400046: Floor
+    400048: Floor_Piece
+    400050: Floor_Piece_001
+    400052: Floor_Piece_002
+    400054: Floor_Piece_003
+    400056: Glass_Floor
+    400058: Inner_Octagon
+    400060: Outer_Octagon
+    400062: Outer_Wall_001
+    400064: Outer_Wall_002
+    400066: Outer_Wall_003
+    400068: Outer_Wall_004
+    400070: Outer_Wall_005
+    400072: Outer_Wall_006
+    400074: Outer_Wall_007
+    400076: Outer_Wall_008
+    400078: World_Centre
+    400080: Camera
+    400082: Cylinder.002
+    400084: Cylinder.003
+    400086: Cylinder.004
+    400088: Cylinder.005
+    400090: Cylinder.006
+    400092: Cylinder.007
+    400094: Cylinder.008
+    400096: Cylinder.009
+    400098: Door hinge
+    400100: Door hinge.001
+    400102: Door hinge.002
+    400104: Door hinge.003
+    400106: Door hinge.004
+    400108: Door hinge.005
+    400110: Door hinge.006
+    400112: Door hinge.007
+    400114: Door Opener
+    400116: Door Ring
+    400118: Door Ring Bottom
+    400120: Elevator main post
+    400122: Elevator Platform
+    400124: Floor Piece
+    400126: Floor Piece.001
+    400128: Floor Piece.002
+    400130: Floor Piece.003
+    400132: Glass Floor
+    400134: Inner Octagon
+    400136: Lamp
+    400138: Lamp.001
+    400140: Outer Octagon
+    400142: Outer Wall.001
+    400144: Outer Wall.002
+    400146: Outer Wall.003
+    400148: Outer Wall.004
+    400150: Outer Wall.005
+    400152: Outer Wall.006
+    400154: Outer Wall.007
+    400156: Outer Wall.008
+    400158: World Centre
+    2300000: Cylinder_002
+    2300002: Cylinder_003
+    2300004: Cylinder_004
+    2300006: Cylinder_005
+    2300008: Cylinder_006
+    2300010: Cylinder_007
+    2300012: Cylinder_008
+    2300014: Cylinder_009
+    2300016: Door_Ring
+    2300018: Door_Ring_Bottom
+    2300020: Elevator_main_post
+    2300022: Elevator_Platform
+    2300024: Floor_Piece
+    2300026: Floor_Piece_001
+    2300028: Floor_Piece_002
+    2300030: Floor_Piece_003
+    2300032: Glass_Floor
+    2300034: Inner_Octagon
+    2300036: Outer_Octagon
+    2300038: Outer_Wall_001
+    2300040: Outer_Wall_002
+    2300042: Outer_Wall_003
+    2300044: Outer_Wall_004
+    2300046: Outer_Wall_005
+    2300048: Outer_Wall_006
+    2300050: Outer_Wall_007
+    2300052: Outer_Wall_008
+    2300054: Cylinder.002
+    2300056: Cylinder.003
+    2300058: Cylinder.004
+    2300060: Cylinder.005
+    2300062: Cylinder.006
+    2300064: Cylinder.007
+    2300066: Cylinder.008
+    2300068: Cylinder.009
+    2300070: Door Ring
+    2300072: Door Ring Bottom
+    2300074: Elevator main post
+    2300076: Elevator Platform
+    2300078: Floor Piece
+    2300080: Floor Piece.001
+    2300082: Floor Piece.002
+    2300084: Floor Piece.003
+    2300086: Glass Floor
+    2300088: Inner Octagon
+    2300090: Outer Octagon
+    2300092: Outer Wall.001
+    2300094: Outer Wall.002
+    2300096: Outer Wall.003
+    2300098: Outer Wall.004
+    2300100: Outer Wall.005
+    2300102: Outer Wall.006
+    2300104: Outer Wall.007
+    2300106: Outer Wall.008
+    3300000: Cylinder_002
+    3300002: Cylinder_003
+    3300004: Cylinder_004
+    3300006: Cylinder_005
+    3300008: Cylinder_006
+    3300010: Cylinder_007
+    3300012: Cylinder_008
+    3300014: Cylinder_009
+    3300016: Door_Ring
+    3300018: Door_Ring_Bottom
+    3300020: Elevator_main_post
+    3300022: Elevator_Platform
+    3300024: Floor_Piece
+    3300026: Floor_Piece_001
+    3300028: Floor_Piece_002
+    3300030: Floor_Piece_003
+    3300032: Glass_Floor
+    3300034: Inner_Octagon
+    3300036: Outer_Octagon
+    3300038: Outer_Wall_001
+    3300040: Outer_Wall_002
+    3300042: Outer_Wall_003
+    3300044: Outer_Wall_004
+    3300046: Outer_Wall_005
+    3300048: Outer_Wall_006
+    3300050: Outer_Wall_007
+    3300052: Outer_Wall_008
+    3300054: Cylinder.002
+    3300056: Cylinder.003
+    3300058: Cylinder.004
+    3300060: Cylinder.005
+    3300062: Cylinder.006
+    3300064: Cylinder.007
+    3300066: Cylinder.008
+    3300068: Cylinder.009
+    3300070: Door Ring
+    3300072: Door Ring Bottom
+    3300074: Elevator main post
+    3300076: Elevator Platform
+    3300078: Floor Piece
+    3300080: Floor Piece.001
+    3300082: Floor Piece.002
+    3300084: Floor Piece.003
+    3300086: Glass Floor
+    3300088: Inner Octagon
+    3300090: Outer Octagon
+    3300092: Outer Wall.001
+    3300094: Outer Wall.002
+    3300096: Outer Wall.003
+    3300098: Outer Wall.004
+    3300100: Outer Wall.005
+    3300102: Outer Wall.006
+    3300104: Outer Wall.007
+    3300106: Outer Wall.008
+    4300000: Elevator_Platform
+    4300002: Elevator_main_post
+    4300004: Glass_Floor
+    4300006: Outer_Wall_008
+    4300008: Outer_Wall_007
+    4300010: Outer_Wall_006
+    4300012: Outer_Wall_004
+    4300014: Outer_Wall_003
+    4300016: Outer_Wall_002
+    4300018: Outer_Wall_001
+    4300020: Outer_Wall_005
+    4300022: Outer_Octagon
+    4300024: Inner_Octagon
+    4300026: Floor_Piece_003
+    4300028: Floor_Piece_002
+    4300030: Floor_Piece_001
+    4300032: Floor_Piece
+    4300034: Door_Ring_Bottom
+    4300036: Door_Ring
+    4300038: Cylinder_009
+    4300040: Cylinder_008
+    4300042: Cylinder_007
+    4300044: Cylinder_006
+    4300046: Cylinder_005
+    4300048: Cylinder_004
+    4300050: Cylinder_003
+    4300052: Cylinder_002
+    4300054: Floor Piece.002
+    4300056: Outer Octagon
+    4300058: Inner Octagon
+    4300060: Glass Floor
+    4300062: Outer Wall.008
+    4300064: Door Ring Bottom
+    4300066: Door Ring
+    4300068: Cylinder.009
+    4300070: Elevator Platform
+    4300072: Elevator main post
+    7400000: Default Take
+    7400002: Floor|Elevator - Arrive
+    7400004: Floor|Elevator PlatformAction
+    7400006: Floor|Exit - Open
+    7400008: Door Opener|Elevator - Arrive
+    7400010: Door Opener|Elevator PlatformAction
+    7400012: Door Opener|Exit - Open
+    7400014: Elevator Platform|Elevator - Arrive
+    7400016: Elevator Platform|Elevator PlatformAction
+    7400018: Elevator Platform|Exit - Open
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main Texture
+    second: {fileID: 2100000, guid: 8471b193e600e4d4dae9e3995f4e6126, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: c3fcc1592ce574ca1bc3ab68dc57efed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: e17b9d9f86f236042b7aa393ea06641c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
