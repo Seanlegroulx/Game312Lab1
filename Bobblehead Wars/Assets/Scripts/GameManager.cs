@@ -13,13 +13,21 @@ public class GameManager : MonoBehaviour
     public float minSpawnTime;
     public float maxSpawnTime;
     public int aliensPerSpawn;
+    public GameObject upgradePrefab;
+    public float upgradeMaxTimeSpawn = 7.5f;
     private int aliensOnScreen = 0;
     private float generatedSpawnTime = 0;
     private float currentSpawnTime = 0;
+
+    private bool spawnedUpgrade = false;
+    private float actualUpgradeTime = 0;
+    private float currentUpgradeTime = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        actualUpgradeTime = Random.Range(upgradeMaxTimeSpawn - 3.0f,
+upgradeMaxTimeSpawn);
+        actualUpgradeTime = Mathf.Abs(actualUpgradeTime);
     }
 
     // Update is called once per frame
@@ -64,5 +72,31 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+
+        currentUpgradeTime += Time.deltaTime;
+        if (currentUpgradeTime > actualUpgradeTime)
+        {
+            if (currentUpgradeTime > actualUpgradeTime)
+            {
+                // 1
+                //if (!spawnedUpgrade)
+                //{
+                //    // 2
+                //    int randomNumber = Random.Range(0, spawnPoints.Length - 1);
+                //    GameObject spawnLocation = spawnPoints[randomNumber];
+                //    // 3
+                //    GameObject upgrade = Instantiate(upgradePrefab) as GameObject;
+                //    Upgrade upgradeScript = upgrade.GetComponent<Upgrade>();
+                //    upgradeScript.gun = gun;
+                //    upgrade.transform.position = spawnLocation.transform.position;
+                //    // 4
+                //    spawnedUpgrade = true;
+                //    SoundManager.Instance.PlayOneShot(SoundManager.Instance.powerUpAppear);
+                //}
+            }
+
+        }
     }
 }
+    
+        
