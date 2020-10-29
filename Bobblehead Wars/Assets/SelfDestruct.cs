@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelfDestruct : MonoBehaviour
 {
-
+    public GameObject Head;
     public float destructTime = 3.0f;
     public void Initiate()
     {
@@ -12,7 +12,7 @@ public class SelfDestruct : MonoBehaviour
     }
     private void selfDestruct()
     {
-        Destroy(gameObject);
+        Destroy(Head);
     }
     
    

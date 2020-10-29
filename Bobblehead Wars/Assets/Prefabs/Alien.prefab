@@ -100,13 +100,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  gameObject: {fileID: 3910474422363671998}
+  arenaAnimator: {fileID: 0}
   navigationUpdate: 0.5
   head: {fileID: 245701255711455612}
   isAlive: 1
   OnDestroy:
     m_PersistentCalls:
       m_Calls: []
+  HeadPop: 0
 --- !u!54 &245701255711455612
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -167,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d29bf621985d246a86728b27e0b00c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Head: {fileID: 8638908527889112892}
   destructTime: 3
 --- !u!1001 &3910474422363704074
 PrefabInstance:
@@ -381,12 +383,6 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 99f1afc166e1e654eaf78de025b3f3d7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7df968ec880694920bcb46964b9d62a4, type: 3}
---- !u!1 &3910474422363671998 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100020, guid: 7df968ec880694920bcb46964b9d62a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 3910474422363704074}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3910474422363574686 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400020, guid: 7df968ec880694920bcb46964b9d62a4,
