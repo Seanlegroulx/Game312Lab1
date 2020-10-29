@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+
 public class GameManager : MonoBehaviour
 {
 
@@ -108,6 +109,11 @@ upgradeMaxTimeSpawn);
             }
 
         }
+        if (totalAliens == 0)
+        {
+            endGame();
+        }
+
     }
 
 
@@ -117,11 +123,14 @@ upgradeMaxTimeSpawn);
         aliensOnScreen -= 1;
         totalAliens -= 1;
 
-
         if (totalAliens == 0)
         {
-            Invoke("endGame", 2.0f);
+            arenaAnimator.SetTrigger("PlayerWon");
+            SoundManager.Instance.PlayOneShot(SoundManager.Instance.
+       elevatorArrived);
+            
         }
+
     }
 
 
@@ -130,7 +139,7 @@ upgradeMaxTimeSpawn);
     {
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.
         elevatorArrived);
-        arenaAnimator.SetTrigger("PlayerWon");
+        arenaAnimator.SetBool("PlayerWon", true);
     }
 }
     

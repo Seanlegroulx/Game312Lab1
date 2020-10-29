@@ -10,7 +10,7 @@ public class Alien : MonoBehaviour
     public Transform target;
     private NavMeshAgent agent;
 
-    public Animator arenaAnimator;
+  
 
     public float navigationUpdate;
     private float navigationTime = 0;
@@ -81,10 +81,7 @@ if (isAlive)
 
         HeadPop += 1;
 
-        if (HeadPop == 50)
-        {
-            Invoke("endGame", 2.0f);
-        }
+      
 
 
 
@@ -98,12 +95,7 @@ if (isAlive)
         Destroy(gameObject);
     }
 
-    private void endGame()
-    {
-        SoundManager.Instance.PlayOneShot(SoundManager.Instance.
-        elevatorArrived);
-        arenaAnimator.SetTrigger("PlayerWon");
-    }
+    
 
 
 

@@ -53,9 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Alien.cs" />
-     <Compile Include="Assets\Arena.cs" />
-     <Compile Include="Assets\ArenaWall.cs" />
+     <Compile Include="Assets\Scripts\Alien.cs" />
+     <Compile Include="Assets\Scripts\Arena.cs" />
+     <Compile Include="Assets\Scripts\ArenaWall.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\CameraShake.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -63,9 +63,9 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
-     <Compile Include="Assets\SelfDestruct.cs" />
-     <Compile Include="Assets\SoundManager.cs" />
-     <Compile Include="Assets\Upgrade.cs" />
+     <Compile Include="Assets\Scripts\SelfDestruct.cs" />
+     <Compile Include="Assets\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Upgrade.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Sean/Documents/Game 312 scripting/Lab 1/starter/Bobblehead Wars/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
