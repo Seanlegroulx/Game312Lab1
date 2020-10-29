@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,15 +14,18 @@ public class GameManager : MonoBehaviour
     public float minSpawnTime;
     public float maxSpawnTime;
     public int aliensPerSpawn;
+
     public GameObject upgradePrefab;
     public float upgradeMaxTimeSpawn = 7.5f;
     private int aliensOnScreen = 0;
     private float generatedSpawnTime = 0;
     private float currentSpawnTime = 0;
-
+    public Gun gun;
     private bool spawnedUpgrade = false;
     private float actualUpgradeTime = 0;
     private float currentUpgradeTime = 0;
+
+    public UnityEvent OnDestroy;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +40,10 @@ upgradeMaxTimeSpawn);
         currentSpawnTime += Time.deltaTime;
         if (currentSpawnTime > generatedSpawnTime)
         {
+            if (player == null)
+            {
+                return;
+            }
             currentSpawnTime = 0;
             generatedSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
             if (aliensPerSpawn > 0 && aliensOnScreen < totalAliens)
@@ -68,6 +76,7 @@ upgradeMaxTimeSpawn);
                         alienScript.target = player.transform;
                         Vector3 targetRotation = new Vector3(player.transform.position.x, newAlien.transform.position.y, player.transform.position.z);
                         newAlien.transform.LookAt(targetRotation);
+                        alienScript.OnDestroy.AddListener(AlienDestroyed);
                     }
                 }
             }
@@ -78,24 +87,32 @@ upgradeMaxTimeSpawn);
         {
             if (currentUpgradeTime > actualUpgradeTime)
             {
-                // 1
-                //if (!spawnedUpgrade)
-                //{
-                //    // 2
-                //    int randomNumber = Random.Range(0, spawnPoints.Length - 1);
-                //    GameObject spawnLocation = spawnPoints[randomNumber];
-                //    // 3
-                //    GameObject upgrade = Instantiate(upgradePrefab) as GameObject;
-                //    Upgrade upgradeScript = upgrade.GetComponent<Upgrade>();
-                //    upgradeScript.gun = gun;
-                //    upgrade.transform.position = spawnLocation.transform.position;
-                //    // 4
-                //    spawnedUpgrade = true;
-                //    SoundManager.Instance.PlayOneShot(SoundManager.Instance.powerUpAppear);
-                //}
+                //1
+                if (!spawnedUpgrade)
+                {
+                    // 2
+                    int randomNumber = Random.Range(0, spawnPoints.Length - 1);
+                    GameObject spawnLocation = spawnPoints[randomNumber];
+                    // 3
+                    GameObject upgrade = Instantiate(upgradePrefab) as GameObject;
+                    Upgrade upgradeScript = upgrade.GetComponent<Upgrade>();
+                    upgradeScript.gun = gun;
+                    upgrade.transform.position = spawnLocation.transform.position;
+                    // 4
+                    spawnedUpgrade = true;
+                    SoundManager.Instance.PlayOneShot(SoundManager.Instance.powerUpAppear);
+                }
             }
 
         }
+    }
+
+
+
+    public void AlienDestroyed()
+    {
+        aliensOnScreen -= 1;
+        totalAliens -= 1;
     }
 }
     
