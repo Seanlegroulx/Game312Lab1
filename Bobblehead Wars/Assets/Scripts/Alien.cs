@@ -14,15 +14,15 @@ public class Alien : MonoBehaviour
 
     public float navigationUpdate;
     private float navigationTime = 0;
-public Rigidbody head;
+    public Rigidbody head;
     public bool isAlive = true;
 
     public UnityEvent OnDestroy;
 
-    public int HeadPop = 0;
+
+    private DeathParticles deathParticles;
 
 
-    
 
     // Start is called before the first frame update
     void Start()
@@ -48,12 +48,9 @@ if (isAlive)
                 navigationTime = 0;
             }
         }
-            }
-        
-
-
-
     }
+        
+ }
 
 
     void OnTriggerEnter(Collider other)
@@ -64,13 +61,19 @@ if (isAlive)
         if (isAlive)
         {
             Die();
-            head.GetComponent<SelfDestruct>().Initiate();
+           
             SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
         }
     }
 
     public void Die()
     {
+
+        if (deathParticles)
+        {
+            deathParticles.transform.parent = null;
+            deathParticles.Activate();
+        }
         isAlive = false;
         head.GetComponent<Animator>().enabled = false;
         head.isKinematic = false;
@@ -78,25 +81,35 @@ if (isAlive)
         head.GetComponent<SphereCollider>().enabled = true;
         head.gameObject.transform.parent = null;
         head.velocity = new Vector3(0, 26.0f, 3.0f);
-
-        HeadPop += 1;
-
-      
-
-
-
+        Destroy(gameObject);    
+        head.GetComponent<SelfDestruct>().Initiate();
         OnDestroy.Invoke();
         OnDestroy.RemoveAllListeners();
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
+        
 
-       
-      
 
-        Destroy(gameObject);
+
+
+
+        
+
+
+
+
+
+        
     }
 
-    
 
+    public DeathParticles GetDeathParticles()
+    {
+        if (deathParticles == null)
+        {
+            deathParticles = GetComponentInChildren<DeathParticles>();
+        }
+        return deathParticles;
+    }
 
 
 }

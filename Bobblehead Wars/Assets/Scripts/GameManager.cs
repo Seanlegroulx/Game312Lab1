@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnDestroy;
 
 
+    public GameObject deathFloor;
+
     public Animator arenaAnimator;
     // Start is called before the first frame update
     void Start()
@@ -81,6 +83,8 @@ upgradeMaxTimeSpawn);
                         Vector3 targetRotation = new Vector3(player.transform.position.x, newAlien.transform.position.y, player.transform.position.z);
                         newAlien.transform.LookAt(targetRotation);
                         alienScript.OnDestroy.AddListener(AlienDestroyed);
+
+                        alienScript.GetDeathParticles().SetDeathFloor(deathFloor);
                     }
                 }
             }
